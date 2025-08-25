@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Uptime Monitor for waaxool.com</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Downtime Log - waaxool.com</h1>
+    <p>Showing only when <strong>waaxool.com</strong> was detected as <strong>down</strong>.</p>
+  </header>
+
+  <main>
+    <section class="stats">
+      <div class="card">
+        <div class="label">Total downtime events</div>
+        <div id="totalEvents" class="value">—</div>
+      </div>
+      <div class="card">
+        <div class="label">Last downtime</div>
+        <div id="lastDowntime" class="value">—</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Events</h2>
+      <div class="table-wrap">
+        <table id="logTable">
+          <thead>
+            <tr>
+              <th>Timestamp (UTC)</th>
+              <th>Status Code</th>
+              <th>Response Time (ms)</th>
+              <th>Reason</th>
+            </tr>
+          </thead>
+          <tbody id="logBody">
+            <tr><td colspan="4">Loading…</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <small>Monitoring <strong>http://waaxool.com/</strong> — Powered by GitHub Actions & GitHub Pages.</small>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
